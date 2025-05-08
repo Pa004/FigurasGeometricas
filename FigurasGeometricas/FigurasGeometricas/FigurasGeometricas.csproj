@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9337D08-76E2-44DA-906B-DF096CC79FE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FigurasGeometricas</RootNamespace>
+    <AssemblyName>FigurasGeometricas</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Circle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Circle.Designer.cs">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Deltoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Deltoid.Designer.cs">
+      <DependentUpon>Deltoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ellipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ellipse.Designer.cs">
+      <DependentUpon>Ellipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cover.Designer.cs">
+      <DependentUpon>Cover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rectangle.Designer.cs">
+      <DependentUpon>Rectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rhomboid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rhomboid.Designer.cs">
+      <DependentUpon>Rhomboid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rhombus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rhombus.Designer.cs">
+      <DependentUpon>Rhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\SemiCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SemiCircle.Designer.cs">
+      <DependentUpon>SemiCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Square.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Square.Designer.cs">
+      <DependentUpon>Square.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Star.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Star.Designer.cs">
+      <DependentUpon>Star.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trapeze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trapeze.Designer.cs">
+      <DependentUpon>Trapeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trapezoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trapezoid.Designer.cs">
+      <DependentUpon>Trapezoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Triangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Triangle.Designer.cs">
+      <DependentUpon>Triangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\CCircle.cs" />
+    <Compile Include="Modelos\CDeltoid.cs" />
+    <Compile Include="Modelos\CEllipse.cs" />
+    <Compile Include="Modelos\CRectangle.cs" />
+    <Compile Include="Modelos\CRhombus.cs" />
+    <Compile Include="Modelos\CSemiCircle.cs" />
+    <Compile Include="Modelos\CSquare.cs" />
+    <Compile Include="Modelos\CStar.cs" />
+    <Compile Include="Modelos\CTrapeze.cs" />
+    <Compile Include="Modelos\CTrapezoid.cs" />
+    <Compile Include="Modelos\Figure.cs" />
+    <Compile Include="Modelos\CTriangle.cs" />
+    <Compile Include="Modelos\CRhomboid.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Circle.resx">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Deltoid.resx">
+      <DependentUpon>Deltoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ellipse.resx">
+      <DependentUpon>Ellipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cover.resx">
+      <DependentUpon>Cover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rectangle.resx">
+      <DependentUpon>Rectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rhomboid.resx">
+      <DependentUpon>Rhomboid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rhombus.resx">
+      <DependentUpon>Rhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SemiCircle.resx">
+      <DependentUpon>SemiCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Square.resx">
+      <DependentUpon>Square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Star.resx">
+      <DependentUpon>Star.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trapeze.resx">
+      <DependentUpon>Trapeze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trapezoid.resx">
+      <DependentUpon>Trapezoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Triangle.resx">
+      <DependentUpon>Triangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
